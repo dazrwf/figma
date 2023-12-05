@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --crorenged: #DA722C;
+    --crblue: #057ADA;
+    --crlightblue: #E8F7FB;
+    --crdarkblue: #023047;
+    --crblack: #070917;
+    --crlightpurple: #6F7DFB;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+.wrapper {
+    max-width: 100%;
+    height: fit-content;
+}
+
+.btm-a {
+    background-color: var(--crdarkblue);
+    padding: 16px 32px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 24px;
+    border: unset;
+    display: flex;
+    gap: 10px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.btm-b {
+    background-color: var(--crorenged);
+    padding: 16px 32px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 24px;
+    border: unset;
+    display: flex;
+    gap: 10px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.btm-c {
+    background-color: var(--crdarkblue);
+    padding: 12px 32px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 24px;
+    border: unset;
+    display: flex;
+    gap: 10px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.btm-d {
+    background-color: var(--crorenged);
+    padding: 12px 32px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 24px;
+    border: unset;
+    display: flex;
+    gap: 10px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+
+}
