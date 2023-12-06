@@ -17,6 +17,19 @@
     justify-content: space-between;
 }
 
+label[for=menu] {
+    display: none;
+}
+
+#close,
+#menu {
+    display: none;
+}
+
+label[for=close] {
+    display: none;
+}
+
 .intro .menu .logo {
     color: #FFF;
     font-family: Raleway;
@@ -28,8 +41,13 @@
 }
 
 .intro .menu nav {
+    position: static;
+    left: 0;
     width: 48%;
     height: 59px;
+    background: none;
+    display: block;
+
 }
 
 .intro .menu nav ul {
@@ -55,6 +73,10 @@
     font-weight: 700;
     line-height: 59px;
     text-decoration: none;
+}
+
+.intro .menu nav ul li button {
+    background-color: #023047;
 }
 
 .intro .intro-bottom {
@@ -198,6 +220,7 @@
     flex-flow: column nowrap;
     column-gap: 102px;
     padding-bottom: 70px;
+    position: relative;
 }
 
 .student .studentbox {
@@ -380,7 +403,6 @@
 
 .student .studentsay {
     width: 60%;
-    height: 546px;
     display: flex;
     flex-flow: column nowrap;
     row-gap: 16px;
@@ -406,7 +428,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 200%;
+    margin: 0;
 
+}
+
+.student .studentsay div {
+    position: absolute;
+    right: 200px;
+    bottom: 30px;
 }
 
 .courses {
@@ -449,7 +478,7 @@
 
 .courses .cours .left {
     width: 60%;
-    height: 418px;
+    height: fit-content;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -520,7 +549,7 @@
 
 .courses .cours .right {
     width: 60%;
-    height: 418px;
+    height: fit-content;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;

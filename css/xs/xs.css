@@ -1,0 +1,852 @@
+.intro {
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 42px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.intro .menu {
+    width: 85%;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro .menu .logo {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    line-height: 59px;
+}
+
+label[for=menu] {
+    display: inline-block;
+    z-index: 2;
+    position: absolute;
+    right: 32px;
+    top: 62px;
+}
+
+
+#menu:checked~div.menu nav {
+    left: 0;
+}
+
+#menu:checked~div.quit>label[for=close] {
+    display: block;
+}
+
+label[for=close] {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    right: 32px;
+    z-index: 999;
+    top: 60px;
+    transition: 300ms;
+    display: none;
+}
+
+#close,
+#menu {
+    display: none;
+}
+
+.intro .menu nav {
+    width: 100%;
+    height: 108vh;
+    background-color: #070917;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    transition: 300ms;
+
+}
+
+.intro .menu nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    row-gap: 32px;
+}
+
+.intro .menu nav ul li {
+    width: auto;
+    height: 59px;
+}
+
+.intro .menu nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.intro .menu nav ul li button {
+    background-color: #DA722C;
+}
+
+.intro .intro-bottom {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 58px;
+    justify-content: center;
+
+}
+
+.intro .intro-bottom .intro-left {
+    width: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 18px;
+}
+
+.intro .intro-bottom .intro-left h3 {
+    width: 80%;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+}
+
+.intro .intro-bottom .intro-left p {
+    width: 80%;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.intro .intro-bottom .intro-center {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;}
+
+
+.intro .intro-bottom .intro-center .top-button {
+    width: 180px;
+    height: 75px;
+    border-radius: 24px;
+    background: #FFF;
+    border: unset;
+    box-shadow: 5px 5px 10px #26308C;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .intro-bottom .intro-center .top-button span:nth-of-type(1) {
+    color: #023047;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.intro .intro-bottom .intro-center .top-button span:nth-of-type(2) {
+    color: #023047;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.intro .intro-bottom .intro-center .bottom-button {
+    width: 160px;
+    height: 75px;
+    border-radius: 24px;
+    background: #FFF;
+    border: unset;
+    box-shadow: 5px 5px 10px #26308C;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .intro-bottom .intro-center .bottom-button span:nth-of-type(1) {
+    color: #023047;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.intro .intro-bottom .intro-center .bottom-button span:nth-of-type(2) {
+    color: #023047;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.intro .intro-bottom .intro-right {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    
+
+}
+
+.intro .intro-bottom .intro-right .images {
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.intro .intro-bottom .intro-right img {
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.student {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    column-gap: 102px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.student .studentbox {
+    width: 100%;
+    position: relative;
+    row-gap: 130px;
+    order: 1;
+}
+
+.student .studentbox .line {
+    width: 28px;
+    height: 546px;
+    border-radius: 24px;
+    background-color: var(--crdarkblue);
+    position: absolute;
+    left: 100px;
+    z-index: 1;
+}
+
+.student .studentbox .mainbox {
+    width: 100%;
+    height: 546px;
+    position: relative;
+    z-index: 20;
+    margin-bottom: 50px;
+}
+
+.student .studentbox .mainbox .box-a {
+    width: 100%;
+    height: 222px;
+    margin-bottom: 50px;
+    border-radius: 24px;
+    margin-top: 35px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.20);
+}
+
+.student .studentbox .mainbox .box-a .up {
+    display: flex;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 24px;
+    background-color: var(--crlightpurple);
+}
+
+.student .studentbox .mainbox .box-a .up p {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+
+}
+
+.student .studentbox .mainbox .box-a .down {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 32px;
+    box-sizing: border-box;
+    column-gap: 106px;
+    height: 120px;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.student .studentbox .mainbox .box-a .down .right {
+    display: flex;
+    flex-flow: column nowrap;
+    height: fit-content;
+    margin-top: -20px;
+    width: 100px;
+
+}
+
+.student .studentbox .mainbox .box-a .down .left {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    background-color: #fff;
+    padding: 32px 0;
+    box-sizing: border-box;
+
+}
+
+.student .studentbox .mainbox .box-a .down .left h3 {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.student .studentbox .mainbox .box-a .down .left p {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.student .studentbox .mainbox .box-b {
+    width: 100%;
+    height: 195px;
+    border-radius: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.20);
+}
+
+.student .studentbox .mainbox .box-b .up {
+    display: flex;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 24px;
+    background-color: var(--crorenged);
+}
+
+.student .studentbox .mainbox .box-b .up p {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+}
+
+.student .studentbox .mainbox .box-b .down {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 32px;
+    box-sizing: border-box;
+    column-gap: 80px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.student .studentbox .mainbox .box-b .down .right {
+    display: flex;
+    flex-flow: column nowrap;
+    height: fit-content;
+    margin-top: -20px;
+    width: 100px;
+}
+
+.student .studentbox .mainbox .box-b .down .left {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    background-color: #fff;
+    padding: 32px 0;
+    box-sizing: border-box;
+}
+
+.student .studentbox .mainbox .box-b .down .left h3 {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.student .studentbox .mainbox .box-b .down .left p {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.student .studentsay {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.student .studentsay h3 {
+    width: 100%;
+    color: #023047;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+}
+
+.student .studentsay p {
+    width: 90%;
+    color: #023047;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.student .studentsay div {
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+}
+
+.courses {
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    padding-top: 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 56px;
+    padding: 70px 0 70px 0;
+}
+
+.courses .btm-b {
+    position: relative;
+    right: 32px;
+    width: fit-content;
+    align-self: flex-end;
+
+}
+
+.courses h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+}
+
+.courses .cours {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 80px;
+    justify-content: center;
+}
+
+.courses .cours .left {
+    width: 100%;
+    height: 418px;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 30px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 24px;
+
+}
+
+.courses .cours .left img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-top: -4px;
+}
+
+.courses .cours .left .info {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 16px;
+}
+
+.courses .cours .left .info .subject {
+    width: fit-content;
+    height: inherit;
+}
+
+.courses .cours .left .info .hrs {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses .cours .left .info .hrs img {
+    width: 20px;
+    height: 20px;
+}
+
+.courses .cours .left .info .hrs p {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+}
+
+.courses .cours .left .info .subject h3 {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-align: left;
+}
+
+.courses .cours .left .line {
+    width: 100%;
+    height: 8px;
+    border-radius: 24px;
+    background-color: #023047;
+    margin-top: -12px;
+
+}
+
+.courses .cours .right {
+    width: 100%;
+    height: 418px;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 30px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 24px;
+
+}
+
+.courses .cours .right img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-top: -4px;
+}
+
+.courses .cours .right .info {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 16px;
+}
+
+.courses .cours .right .info .subject {
+    width: fit-content;
+    height: inherit;
+}
+
+.courses .cours .right .info .hrs {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses .cours .right .info .hrs img {
+    width: 20px;
+    height: 20px;
+}
+
+.courses .cours .right .info .hrs p {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+}
+
+.courses .cours .right .info .subject h3 {
+    color: #023047;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-align: left;
+}
+
+.courses .cours .right .line {
+    width: 100%;
+    height: 8px;
+    border-radius: 24px;
+    background-color: #023047;
+    margin-top: -12px;
+
+}
+
+.apps {
+    width: 100%;
+    height: 462px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    row-gap: 13px;
+}
+
+.apps h3 {
+    color: #023047;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+}
+
+.apps p {
+    color: #023047;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    text-align: center;
+}
+
+.apps .app {
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+
+.apps .app div {
+    width: 310px;
+    height: 100px;
+    padding: 20px 31px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 14px;
+    background-color: #000;
+    align-items: center;
+
+}
+
+.apps .app div img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.apps .app div p {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    font-family: Poppins;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 70px 116px;
+    box-sizing: border-box;
+    background-color: #070917;
+
+}
+
+.footer .main {
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    column-gap: 100px;
+    align-items: center;
+}
+
+.footer .main .columns {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: space-between;
+
+}
+
+.footer .main .columns .heading {
+    width: 100%;
+    height: fit-content;
+    color: #DA722C;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.footer .main .columns .more {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    row-gap: 9px;
+
+}
+
+.footer .main .columns .more a {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer .main .columns .more label {
+    position: relative;
+}
+
+.footer .main .columns .more input {
+    width: 350px;
+    height: 39px;
+    border-radius: 8px;
+    padding: 4px 27px;
+    box-sizing: border-box;
+    border: unset;
+}
+
+.footer .main .columns .more button {
+    position: relative;
+    margin: 20px auto;
+    display: block;
+    width: 135px;
+    height: 30px;
+    background-color: #023047;
+    border-radius: 8px;
+    border: unset;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    cursor: pointer;
+}
+
+.footer .main .columns .more .social {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 28px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+
+.footer .dev {
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}

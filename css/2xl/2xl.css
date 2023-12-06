@@ -376,7 +376,6 @@
 
 .student .studentsay {
     width: 45%;
-    height: 546px;
     display: flex;
     flex-flow: column nowrap;
     row-gap: 16px;
@@ -402,6 +401,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 200%;
+    margin: 0 ;
+
+}
+
+.student .studentsay div {
+    position: static;
 
 }
 
@@ -443,7 +448,7 @@
 
 .courses .cours .left {
     width: 38%;
-    height: 418px;
+    height: fit-content;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -514,7 +519,7 @@
 
 .courses .cours .right {
     width: 38%;
-    height: 418px;
+    height: fit-content;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -762,3 +767,13 @@
     line-height: 200%;
 
 }
+
+/* label[for=menu]{
+    display: none;
+}
+#close,#menu{
+    display: none;
+}
+label[for=close]{
+    display: none;
+} */
