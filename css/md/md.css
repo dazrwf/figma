@@ -510,7 +510,6 @@ label[for=close] {
 
 .courses .cours .left {
     width: 70%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -582,7 +581,6 @@ label[for=close] {
 
 .courses .cours .right {
     width: 70%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -824,14 +822,12 @@ label[for=close] {
     margin-top: 16px;
     justify-content: flex-start;
 }
-
-
-.footer .dev {
-    color: #FFF;
+.footer .dev{
+    margin-top: 20px;
+    color: #fff;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 200%;
-    margin-top: 20px;
 }

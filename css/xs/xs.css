@@ -520,7 +520,6 @@ label[for=close] {
 
 .courses .cours .left {
     width: 100%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -550,6 +549,7 @@ label[for=close] {
 .courses .cours .left .info .subject {
     width: fit-content;
     height: inherit;
+    width: 80%;
 }
 
 .courses .cours .left .info .hrs {
@@ -594,7 +594,6 @@ label[for=close] {
 
 .courses .cours .right {
     width: 100%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -624,6 +623,7 @@ label[for=close] {
 .courses .cours .right .info .subject {
     width: fit-content;
     height: inherit;
+    width: 80%;
 }
 
 .courses .cours .right .info .hrs {
@@ -740,7 +740,7 @@ label[for=close] {
 .footer {
     width: 100%;
     height: auto;
-    padding: 70px 116px;
+    padding: 70px 0;
     box-sizing: border-box;
     background-color: #070917;
 
@@ -838,7 +838,6 @@ label[for=close] {
 
 
 .footer .dev {
-    
     color: #FFF;
     text-align: center;
     font-family: Poppins;

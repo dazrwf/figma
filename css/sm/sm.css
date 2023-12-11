@@ -448,7 +448,7 @@ label[for=close] {
     width: 560px;
     color: #023047;
     font-family: Raleway;
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 900;
     line-height: 120%;
@@ -511,7 +511,6 @@ label[for=close] {
 
 .courses .cours .left {
     width: 90%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -583,7 +582,6 @@ label[for=close] {
 
 .courses .cours .right {
     width: 90%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
