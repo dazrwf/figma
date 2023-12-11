@@ -450,7 +450,6 @@
 
 .courses .cours .left {
     width: 40%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -516,12 +515,12 @@
     height: 8px;
     border-radius: 24px;
     background-color: #023047;
+    vertical-align: bottom;
 
 }
 
 .courses .cours .right {
     width: 40%;
-    height: 418px;
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
